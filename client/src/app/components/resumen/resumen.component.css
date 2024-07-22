@@ -23,7 +23,7 @@ body {
 }
 
 .header {
-    background-color: #CB4154;
+    background-color: #4a4657;
     color: white;
     display: flex;
     flex-direction: column;
@@ -37,14 +37,14 @@ body {
 }
 
 .title {
-    background-color: #E2725B;
+    background-color: #3c374e;
     width: 100%;
     text-align: center;
     padding: 10px 0;
 }
 
 .header nav {
-    background-color: #CB4154;
+    background-color: #4a4657;
     width: 100%;
 }
 
@@ -73,22 +73,24 @@ body {
 
 .main-content {
     background-color: #f1edec;
-    background-image: url('/assets/FondoWebP.gif');
     flex: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 20px;
+    background: linear-gradient(to top, #a9a7a7, rgb(255, 255, 255), #4a4657);
+  
 }
 
 .main-content .white-container {
-    background-color: #fff2cc;
+    background-color: #a9a7a7;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 90%;
     margin: 0 auto;
+    border: 2px solid #080404;
 }
 
 .main-content h2 {
@@ -107,17 +109,21 @@ body {
 
 .expenses-table th, .expenses-table td {
     border: 1px solid black;
-    padding: 10px;
+    padding: 25px;
     text-align: center;
+    border: 2px solid #080404;
+
 }
 
 .expenses-table th {
-    background-color: #c94435;
+    background-color: #16a085;
     color: white;
+    border: 2px solid #080404;
 }
 
 .expenses-table tbody tr:nth-child(odd) {
     background-color: #f9f9f9;
+    border: 2px solid #080404;
 }
 
 .expenses-table tbody tr:nth-child(even) {
@@ -129,16 +135,18 @@ body {
     padding: 8px 15px;
     color: black;
     border: none;
-    border-radius: 5px;
+    border-radius: 10px;
     cursor: pointer;
     margin-right: auto;
     position: relative;
     margin-bottom: 20px;
-    background-color: #b7392c;
+    background-color: #b5e8de;
     font-family: sans-serif;
     font-weight: 600;
     font-size: medium;
-    color: #fff2cc;
+    border: 2px solid #080404;
+
+
 }
 
 .dropdown {
@@ -172,5 +180,5 @@ body {
 }
 
 .dropdown:hover .button_descargar {
-    background-color: #3e8e41;
+    background-color: #56baa6;
 }

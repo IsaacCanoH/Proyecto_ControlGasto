@@ -23,7 +23,7 @@ body {
 }
 
 .header {
-    background-color: #CB4154;
+    background-color: #4a4657;
     color: white;
     display: flex;
     flex-direction: column;
@@ -37,14 +37,14 @@ body {
 }
 
 .title {
-    background-color: #E2725B;
+    background-color: #3c374e;
     width: 100%;
     text-align: center;
     padding: 10px 0;
 }
 
 .header nav {
-    background-color: #CB4154;
+    background-color: #4a4657;
     width: 100%;
 }
 
@@ -73,7 +73,7 @@ body {
 
 .main-content {
     background-color: #f1edec;
-    background-image: url('/assets/FondoWebP.gif');
+    background: linear-gradient(to top, #a9a7a7, rgb(255, 255, 255), #4a4657);
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -83,12 +83,14 @@ body {
 }
 
 .main-content .white-container {
-    background-color: #fff2cc;
+    background-color: #a9a7a7;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 90%;
     margin: 0 auto;
+    border: 2px solid #080404;
+
 }
 
 .main-content h1 {
@@ -107,13 +109,15 @@ body {
 
 .expenses-table th, .expenses-table td {
     border: 1px solid black;
-    padding: 10px;
+    padding: 25px;
     text-align: center;
 }
 
 .expenses-table th {
-    background-color: #c94435;
+    background-color: #16a085;
     color: white;
+    border: 2px solid #000000;
+
 }
 
 .expenses-table tbody tr:nth-child(odd) {
@@ -149,4 +153,48 @@ body {
 
 .edit-button:hover {
     background-color: deepskyblue;
+}
+.custom-btn:hover {
+    background-color: #56baa6;
+}
+button {  
+    background-color: #b5e8de;
+    color: rgb(0, 0, 0);
+    padding: 5px 25px;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 1.2em;
+    text-align: center;
+    font-family: sans-serif;
+    display :grid;
+    text-decoration: none;
+    border: 2px solid #080404;
+    grid-column: span 1;
+    width: 100%;
+    margin-bottom: 10px;
+    justify-content: center;
+}
+
+button a {
+    display: flex;
+    text-decoration: none;
+    color: inherit;
+}
+
+.btn-secondary {
+    background-color: #9c5555;
+    color: rgb(255, 255, 255);
+    padding: 5px 25px;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 1.2em;
+    text-align: center;
+    display: flex;
+    font-family: sans-serif;
+    display :flex;
+    text-decoration: none;
+    border: 2px solid #080404;
+    grid-column: span 1;
+    align-items: center;
+    justify-content: center;
 }

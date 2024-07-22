@@ -25,7 +25,7 @@ body {
 }
 
 .header {
-    background-color: #CB4154;
+    background-color: #4a4657;
     color: white;
     display: flex;
     flex-direction: column;
@@ -40,14 +40,14 @@ body {
 }
 
 .title {
-    background-color: #E2725B;
+    background-color: #3c374e;
     width: 100%;
     text-align: center;
     padding: 10px 0;
 }
 
 .header nav {
-    background-color: #CB4154;
+    background-color: #4a4657;
     width: 100%;
 }
 
@@ -74,7 +74,7 @@ body {
 
 .main-content {
     background-color: #f1edec;
-    background-image: url('/assets/FondoWebP.gif');
+    background: linear-gradient(to top, #a9a7a7, rgb(255, 255, 255), #4a4657);
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -98,7 +98,7 @@ body {
     max-width: 450px; 
     margin: auto; 
     margin-top: 50px; 
-    background-color:#fff2cc; 
+    background-color:#a9a7a7; 
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -123,7 +123,7 @@ body {
     display: block;
     margin-bottom: 5px;
     font-size: 1.2em; 
-    font-family:sans-serif;
+    font-family: sans-serif;
 }
 
 .form-container .form-control {
@@ -133,11 +133,11 @@ body {
     border: 1px solid #ccc;
     border-radius: 4px;
     font-size: 1em; 
-    font-family:sans-serif;
+    font-family: sans-serif;
 }
 
 .contenido-principal {
-    background-color: #f2d694; 
+    background-color: #a4da9c; 
     flex: 1; 
     display: flex;
     flex-direction: column; 
@@ -153,12 +153,15 @@ body {
     margin-top: 20px; 
     padding: 30px; 
     border: 1px solid #ccc; 
-    border-radius: 5px; 
+    border-radius: 10px; 
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
     display: grid; 
     grid-template-columns: repeat(3, 1fr); 
     gap: 30px; 
-    background-color: #fff2cc;
+    background-color: #a9a7a7;
+    border: 2px solid black;
+
+    
 }
 
 .form-group {
@@ -175,30 +178,12 @@ input {
     width: calc(100% - 12px); 
     padding: 10px; 
     border: 1px solid #ccc; 
-    border-radius: 4px; 
+    border-radius: 7px; 
     box-sizing: border-box; 
     font-size: 12px; 
     font-family: sans-serif;
-}
+    border: 2px solid black;
 
-button {
-    grid-column: span 3;
-    background-color:#b7392c;
-    color: #fff2cc;
-    border: none; 
-    padding: 10px 20px; 
-    border-radius: 4px; 
-    cursor: pointer; 
-    font-size: 16px; 
-}
-
-button a {
-    text-decoration: none;
-    color: inherit;
-}
-
-button:hover {
-    background-color: #cd695e; 
 }
 
 .links-container {
@@ -210,7 +195,7 @@ button:hover {
 
 .links-container h5 {
     margin: 0; 
-    font-family: sans-serif; 
+    font-family: sans-serif;
 }
 
 .links-container h5 a {
@@ -261,3 +246,45 @@ button:hover {
     font-size: 1em;
 }
 
+button {  
+    background-color: #b5e8de;
+    color: rgb(0, 0, 0);
+    padding: 5px 25px;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 1.2em;
+    text-align: center;
+    font-family: sans-serif;
+    display :grid;
+    text-decoration: none;
+    border: 2px solid #080404;
+    grid-column: span 3;
+}
+
+button a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.btn-secondary {
+    background-color: #9c5555;
+    color: rgb(255, 255, 255);
+    padding: 5px 25px;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 1.2em;
+    text-align: center;
+    font-family: sans-serif;
+    display :grid;
+    text-decoration: none;
+    border: 2px solid #080404;
+    grid-column: span 3;
+}
+
+.custom-btn:hover {
+    background-color: #56baa6;
+}
+
+.custom-btn-btn:hover {
+    background-color: #381818;
+}

@@ -25,18 +25,17 @@
     </script>
 </head>
 <body>
-    <div class="header">
+    <header class="header">
         <div class="title">
-            <h1>Recuperar Contraseña</h1>
+            <h1>Inicia Sesión</h1>
         </div>
         <nav>
             <ul>
-                <li><a routerLink="/home">Control de Gastos</a></li>
-                <li><a routerLink="/login">Inicia sesión</a></li>
-                <li><a routerLink="/registrarse">Registrarse</a></li>
+                <li class="left"><a routerLink="/">Control de Gastos</a></li>
+                <li class="right"><a routerLink="/registrarse">Registrarse</a></li>
             </ul>
         </nav>
-    </div>
+    </header>
     <div class="container">
         <form class="form-container" onsubmit="validateForm(event)">
             <h2>Recuperar Contraseña</h2>
@@ -45,17 +44,16 @@
                 <input type="email" class="form-control" id="exampleEmail" aria-describedby="emailUser" placeholder="ejemplo@dominio.com">
             </div>
             <div id="error-message" class="error-message">Se solicita escribir un correo válido</div>
-            <button type="submit" class="btn btn-primary">Confirmar ✔</button>
-            <button type="button" class="btn btn-secondary">Enviar</button>
+            <button type="submit" class="custom-btn btn btn-prima">Confirmar ✔</button>
+            <button type="button" class="custom-btn-btn btn btn-secondary">Enviar</button>
             <div class="verification-container">
                 <div class="mb-3">
                     <p class="texto-separado">Le hemos mandado un mensaje a su correo, por favor escriba los caracteres que enviamos.</p>
                     <input type="text" class="form-control" id="verificationCode" maxlength="6" placeholder="******">
                 </div>
-                <div style="display: flex; justify-content: flex-end;">
-                    <button type="button" class="btn btn-cancel">Cancelar ✖</button>
-                    <button type="submit" class="btn btn-confirm">Confirmar ✔</button>
-                </div>
+                   <button type="submit" class="custom-btn btn btn-prima"><a routerLink="/recuperar-contrasena2">Confirmar ✔ </a></button>
+                   
+                   <button type="submit" class="custom-btn-btn btn btn-secondary"><a routerLink="/login"> Cancelar ✖ </a></button>
             </div>
         </form>
     </div>

@@ -9,8 +9,7 @@
             </div>
             <nav>
                 <ul>
-                    <li class="left"><a routerLink="/inicio-usuario">Control de Gastos</a></li>
-                    <li class="right"><a routerLink="/ingreso/list">Regresar</a></li>
+                    <li class="left">Control de Gastos</li>
                 </ul>
             </nav>
         </header>
@@ -63,7 +62,8 @@
                         </label>
                         <input type="date" id="fechaIngreso" name="fechaIngreso" [(ngModel)]="ingreso.fechaIngreso" required>
                     </div>
-                    <button type="submit"><i class="fas fa-check"></i></button>
+                    <button type="submit" class="custom-btn btn btn-primary"><a routerLink="/ingreso/list">Confirmar ✔ </a></button>
+                    <button type="submit" class="custom-btn-btn btn btn-secondary"><a routerLink="/ingreso/list"> Cancelar ✖ </a></button>
                 </form>
             </div>
         </main>   

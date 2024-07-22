@@ -5,7 +5,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './components/auth/login/login.component';
 import { RegistrarseComponent } from './components/auth/registrarse/registrarse.component';
-import { RecuperarContrasenaComponent } from './components/auth/recuperar-contrasena/recuperar-contrasena.component';
 import { HomeComponent } from './components/home/home.component';
 import { InicioUsuarioComponent } from './components/inicio-usuario/inicio-usuario.component';
 import { HttpClientModule } from '@angular/common/http';
@@ -23,6 +22,7 @@ import { provideHttpClient, withFetch } from '@angular/common/http';
 import { AgendaComponent } from './components/agenda/agenda.component';
 import { UsuarioComponent } from './components/usuario/usuario.component';
 import { ResumenComponent } from './components/resumen/resumen.component';
+import { RecuperarContrasenaComponent } from './components/auth/recuperar-contrasena/recuperar-contrasena.component';
 
 
 @NgModule({

@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="es">
+<head>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="inicio-usuario.component.css">
+</head>
 <body>
     <div class="container">
         <header class="header">
@@ -9,53 +12,67 @@
             </div>
             <nav>
                 <ul>
-                    <li class="left"><a routerLink="/inicio-usuario">Control de Gastos</a></li>
+                    <li class="left">Control de Gastos</li>
                     <li class="right"><a routerLink="/inicio-usuario"></a><i class="fas fa-bell"></i></li>
                     <li class="right"><a routerLink="/agenda">Agendar</a></li>
                     <li class="right"><a routerLink="/resumen">Resumen</a></li>
                     <li class="right"><a routerLink="/home">Cerrar sesión</a></li>
-                    <li class="right"><a routerLink="/usuario">Usuario</a> 
                 </ul>
             </nav>
         </header>
         <main class="main-content">
             <section class="gastos">
-                <h2>Mis gastos</h2>
-                <div class="botones">
-                    <a routerLink="/gastos/list">Ver Gastos</a>
-                    <a routerLink="/ingreso/list">Ver Ingresos</a>
-                    <a routerLink="/servicio/list">Ver Servicios</a>
+                <div class="card">
+                    <div class="face front">
+                        <img src="" alt="">
+                        <h3>Gastos</h3>
+                    </div>
+                    <div class="face back">
+                        <h2>Gasto</h2>
+                        <p>
+                            Lorem Ipsum dolor sit amet consectetur
+                            adipisicing elit. A asperiores consequatur
+                            iure possimus tempora rem sequi quisquam optio deserunt vel?
+                        </p>
+                        <div class="enlace">
+                            <a class="custom-btn custom-btn-primary" routerLink="/gastos/list">Agregar Gasto</a>
+                        </div>
+                    </div>
                 </div>
-            </section>
-            <section class="agenda">
-                <h2>Mi agenda</h2>
-                <div class="calendario">
-                    <button class="prev" onclick="prevMonth()">❮</button>
-                    <div class="mes-año" id="mesAño">JUNIO 2024</div>
-                    <button class="next" onclick="nextMonth()">❯</button>
-                    <table id="calendario">
-                        <thead>
-                            <tr>
-                                <th>DOM</th>
-                                <th>LUN</th>
-                                <th>MAR</th>
-                                <th>MIE</th>
-                                <th>JUE</th>
-                                <th>VIE</th>
-                                <th>SAB</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                           <tr><td class="nil"></td><td class="nil"></td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td></tr>
-                            <tr><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td><td class="today">11</td><td>12</td></tr>
-                            <tr><td>13</td><td>14</td><td>15</td><td>16</td><td>17</td><td>18</td><td>19</td></tr>
-                            <tr><td>20</td><td>21</td><td>22</td><td>23</td><td>24</td><td>25</td><td>26</td></tr>
-                            <tr><td>27</td><td>28</td><td>29</td><td>30</td><td class="nil"></td><td class="nil"></td><td class="nil"></td></tr>
-                       
-                        </tbody>
-                    </table>
+                <div class="card">
+                    <div class="face front">
+                        <img src="img/imagen-fifa.jpg" alt="">
+                        <h3>Ingresos</h3>
+                    </div>
+                    <div class="face back">
+                        <h2>Ingreso</h2>
+                        <p>
+                            Lorem Ipsum dolor sit amet consectetur
+                            adipisicing elit. A asperiores consequatur
+                            iure possimus tempora rem sequi quisquam optio deserunt vel?
+                        </p>
+                        <div class="enlace">
+                            <a class="custom-btn custom-btn-primary" routerLink="/ingreso/list">Agregar Ingreso</a>
+                        </div>
+                    </div>
                 </div>
-                <button routerLink="/agenda">Entrar</button>
+                <div class="card">
+                    <div class="face front">
+                        <img src="img/imagen-fifa.jpg" alt="">
+                        <h3>Servicios</h3>
+                    </div>
+                    <div class="face back">
+                        <h2>Servicio</h2>
+                        <p>
+                            Lorem Ipsum dolor sit amet consectetur
+                            adipisicing elit. A asperiores consequatur
+                            iure possimus tempora rem sequi quisquam optio deserunt vel?
+                        </p>
+                        <div class="enlace">
+                            <a class="custom-btn custom-btn-primary" routerLink="/servicio/list">Agregar Servicio</a>
+                        </div>
+                    </div>
+                </div>
             </section>
         </main>
     </div>

@@ -1,14 +1,14 @@
 .container h1{
-    font-family:sans-serif;
+    font-family: sans-serif;
 }
 
 .left{
-    font-family:sans-serif;
-    margin-left: 0%;
+    font-family: sans-serif;
+        margin-left: 0%;
 }
 
 .right{
-    font-family:sans-serif;
+    font-family: sans-serif;
 }
 
 body {
@@ -23,7 +23,6 @@ body {
 }
 
 .header {
-    background-color: #CB4154;
     color: white;
     display: flex;
     flex-direction: column;
@@ -31,14 +30,14 @@ body {
 }
 
 .title {
-    background-color: #E2725B;
+    background-color: #3c374e;
     width: 100%;
     text-align: center;
     padding: 10px 0;
 }
 
 .header nav {
-    background-color: #CB4154;
+    background-color: #4a4657;
     width: 100%;
 }
 
@@ -65,8 +64,8 @@ body {
 }
 
 .main-content {
-    background-color: #f1edec;
-    background-image: url('/assets/FondoWebP.gif');
+    background-color: #000000;
+    background: linear-gradient(to top, #a9a7a7, rgb(255, 255, 255), #4a4657);
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -98,10 +97,10 @@ body {
     max-width: 450px; 
     margin: auto; 
     margin-top: 50px; 
-    background-color: #fff2cc;
+    background-color: #a9a7a7;
     padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    border: 2px solid #000000;
+    border-radius: 10px;
 }
 
 .form-container h1 {
@@ -116,53 +115,44 @@ body {
     font-family: sans-serif;
 }
 .form-container .mb-3 {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
 .form-container .form-label {
     display: block;
     margin-bottom: 5px;
     font-size: 1.2em; 
-    font-family:sans-serif;
+    font-family: sans-serif;
 }
 
 .form-container .form-control {
     width: 100%;
     padding: 10px;
     margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    border: 2px solid #080404;
+    border-radius: 7px;
     font-size: 1em; 
-    font-family:sans-serif;
+    font-family: sans-serif;
 }
 
 .custom-btn {
-    width: 90%; 
-    background-color: #b7392c;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
+    background-color: #b5e8de;
+    color: rgb(0, 0, 0);
+    padding: 5px 25px;
+    border-radius: 15px;
     cursor: pointer;
     font-size: 1.2em;
     text-align: center;
     font-family: sans-serif;
-    display: inline-block;
+    display :grid;
     text-decoration: none;
+    border: 2px solid #080404;
+    grid-column: span 3;
+
 }
 
 .custom-btn:hover {
-    background-color: #cd695e;
-}
-.contenido-principal {
-    background-color: #f2d694; 
-    flex: 1; 
-    display: flex;
-    flex-direction: column; 
-    align-items: center;
-    justify-content: center; 
-    padding: 12px; 
-    min-height: 70%;
+    background-color: #56baa6;
 }
 
 .form-grid {
@@ -170,10 +160,10 @@ body {
     max-width: 800px; 
     margin-top: 20px; 
     padding: 30px; 
-    border: 1px solid #ccc; 
+    border: 2px solid #060505; 
     border-radius: 5px; 
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
-    display: grid; 
+    box-shadow: 0 0 10px rgba(177, 14, 14, 0.1); 
+    display:flex; 
     grid-template-columns: repeat(3, 1fr); 
     gap: 30px; 
 }
@@ -187,13 +177,15 @@ label {
     display: block; 
     margin-bottom: 5px;
     font-weight: bold;
+    text-align: center;
+
 }
 
 input {
     width: calc(100% - 12px); 
     padding: 10px; 
-    border: 1px solid #ccc; 
-    border-radius: 4px; 
+    border: 2px solid #070404; 
+    border-radius: 7px; 
     box-sizing: border-box; 
     font-size: 12px; 
     font-family: sans-serif;
@@ -203,15 +195,15 @@ input {
     display: flex;
     justify-content: space-between;
     width: 100%; 
-    padding: 10px 0; 
+    padding: 10px; 
 }
 
 .links-container h5 {
     margin: 0;
-    font-family: sans-serif; 
+    font-family: sans-serif;
 }
 
 .links-container h5 a {
-    text-decoration: none; 
-    color: inherit; 
+    text-decoration:dashed; 
+    color:#000000; 
 }
