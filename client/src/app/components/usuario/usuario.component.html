@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="es">
+<head>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
 <body>
     <div class="container">
         <header class="header">
@@ -12,54 +14,49 @@
                     <li class="left"><a routerLink="/inicio-usuario">Control de Gastos</a></li>
                     <li class="right"><a routerLink="/inicio-usuario">Regresar</a></li>
                     <li class="right"><a routerLink="/home">Cerrar sesión</a></li>
-                </ul>
+                </ul>                
             </nav>
         </header>
         <main class="main-content">
-            <div class="container">
-                <h1>Datos Usuario</h1>
-                <form id="registroForm" class="form-grid">
-                    <div class="form-group">
-                        <label for="nombre">Nombre(s)</label>
-                        <input type="text" id="nombre" name="nombre" placeholder="Nombre" required readonly>
+            <section class="seccion-perfil-usuario">
+                <div class="perfil-usuario-header">
+                    <button type="button" class="boton-editar-datos">
+                        <i class="far fa-edit"></i> Editar datos
+                    </button>
+                    <div class="perfil-usuario-portada">
+                        <div class="perfil-usuario-avatar">
+                            <img src="http://localhost/multimedia/relleno/img-c9.png" alt="img-avatar">
+                            <button type="button" class="boton-avatar">
+                                <i class="far fa-image"></i>
+                            </button>
+                        </div>
+                        <button type="button" class="boton-portada">
+                            <i class="far fa-image"></i> Cambiar fondo
+                        </button>
                     </div>
-                    <div class="form-group">
-                        <label for="apellidoPaterno">Apellido Paterno</label>
-                        <input type="text" id="apellidoPaterno" name="apellidoPaterno" placeholder="Apellido Paterno" required readonly>
+                </div>
+                <div class="perfil-usuario-body">
+                    <div class="perfil-usuario-bio">
+                        <h3 class="titulo">Maria Perez Lopez</h3>
+                        <p class="texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                     </div>
-                    <div class="form-group">
-                        <label for="apellidoMaterno">Apellido Materno</label>
-                        <input type="text" id="apellidoMaterno" name="apellidoMaterno" placeholder="Apellido Materno" required readonly>
+                    <div class="perfil-usuario-footer">
+                        <ul class="lista-datos">
+                            <li><i class="icono fas fa-map-signs"></i> Direccion de usuario:</li>
+                            <li><i class="icono fas fa-phone-alt"></i> Telefono:</li>
+                            <li><i class="icono fas fa-briefcase"></i> Trabaja en.</li>
+                            <li><i class="icono fas fa-building"></i> Cargo</li>
+                        </ul>
+                        <ul class="lista-datos">
+                            <li><i class="icono fas fa-map-marker-alt"></i> Ubicacion.</li>
+                            <li><i class="icono fas fa-calendar-alt"></i> Fecha nacimiento.</li>
+                            <li><i class="icono fas fa-user-check"></i> Registro.</li>
+                            <li><i class="icono fas fa-share-alt"></i> Redes sociales.</li>
+                        </ul>
                     </div>
-                    <div class="form-group">
-                        <label for="telefono">Num. Teléfono</label>
-                        <input type="text" id="telefono" name="telefono" pattern="[0-9]{1,}" title="Ingresa solo números" placeholder="1234567890" required readonly>
-                    </div>
-                    <div class="form-group">
-                        <label for="correo">Correo Electrónico</label>
-                        <input type="email" id="correo" name="correo" placeholder="ejemplo@dominio.com" required readonly>
-                    </div>
-                    <div class="form-group">
-                        <label for="fechaNacimiento">Fecha de Nacimiento</label>
-                        <input type="date" id="fechaNacimiento" name="fechaNacimiento" required readonly>
-                    </div>
-                    <div class="form-group">
-                        <label for="usuario">Crear Usuario</label>
-                        <input type="text" id="usuario" name="usuario" placeholder="usuario123" required readonly>
-                    </div>
-                    <div class="form-group">
-                        <label for="contrasena">Crear Contraseña</label>
-                        <input type="password" id="contrasena" name="contrasena" placeholder="********" required readonly>
-                    </div>
-                    <div class="form-group">
-                        <label for="confirmarContrasena">Confirma Contraseña</label>
-                        <input type="password" id="confirmarContrasena" name="confirmarContrasena" placeholder="********" required readonly>
-                    </div>
-                    <button type="submit" class="btn btn-primary"><i class="fas fa-edit"></i></button>
-                </form>
-            </div>
-        </main>        
+                </div>
+            </section>
+        </main>
     </div>
 </body>
 </html>
-

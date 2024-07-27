@@ -1,22 +1,24 @@
 <!DOCTYPE html>
 <html lang="es">
+<head>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
 <body>
     <div class="container">
-    <header class="header">
+        <header class="header">
             <div class="title">
-                <h1>Ingresar</h1>
+                <h1>Registrar Gasto</h1>
             </div>
             <nav>
                 <ul>
-                  <li class="left"><a href="/inicio-usuario">Control de Gastos</a></li>
-                  <li class="right"><a routerLink="/gastos/list">Regresar</a></li>
+                    <li class="left"><a href="/inicio-usuario">Control de Gastos</a></li>
+                    <li class="right"><a routerLink="/gastos/list">Regresar</a></li>
                 </ul>
             </nav>
         </header>
         <main class="main-content">
+            <h3></h3>
             <div class="container">
-                <h1>Crear gasto</h1>
                 <form id="registroForm" class="form-grid" (ngSubmit)="saveNewGasto()">
                     <div class="form-group">
                         <label for="descripcion">Descripción
@@ -70,9 +72,9 @@
                                 <span class="tooltip">Adjunta una foto del recibo o del gasto.</span>
                             </span>
                         </label>
-                        <input type="file" id="foto" name="foto">
+                        <input type="file" id="foto" name="foto" class="file-input">
                     </div>
-                    <button type="submit"><i class="fas fa-check"></i></button>
+                    <button type="submit"><i class="fas fa-check"></i> Guardar</button>
                 </form>
             </div>
         </main>   

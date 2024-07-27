@@ -5,17 +5,16 @@
 .left {
     font-family: sans-serif;
     margin-left: 0%;
-    font-weight: 600;
 }
 
 .right {
     font-family: sans-serif;
-    font-weight: 600;
 }
 
 body {
     margin: 0;
     font-family: sans-serif;
+    overflow: hidden;
 }
 
 .container {
@@ -25,7 +24,7 @@ body {
 }
 
 .header {
-    background-color: #CB4154;
+    background-color: #4a4657;
     color: white;
     display: flex;
     flex-direction: column;
@@ -33,21 +32,20 @@ body {
 }
 
 .header nav ul li.right a i {
-    margin-right: 5px; 
-    color: white; 
-    font-size: 16px; 
-    font-weight: bold;
+    margin-right: 5px;
+    color: white;
+    font-size: 16px;
 }
 
 .title {
-    background-color: #E2725B;
+    background-color: #3c374e;
     width: 100%;
     text-align: center;
     padding: 10px 0;
 }
 
 .header nav {
-    background-color: #CB4154;
+    background-color: #4a4657;
     width: 100%;
 }
 
@@ -70,81 +68,21 @@ body {
 .header nav ul li a {
     color: white;
     text-decoration: none;
+    font-family: sans-serif;
+    font-weight: 600;
 }
-
 .main-content {
     background-color: #f1edec;
-    background-image: url('/assets/FondoWebP.gif');
+    background-image: url('/assets/FondoFL.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     flex: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 20px;
-}
-
-.main-content h2 {
-    margin-top: 0;
-}
-
-.main-content .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.form-container {
-    width: 30%; 
-    max-width: 450px; 
-    margin: auto; 
-    margin-top: 50px; 
-    background-color:#fff2cc; 
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-.form-container h1 {
-    text-align: center; 
-    font-size: 2em; 
-    margin-bottom: 20px; 
-    font-family: sans-serif;
-}
-
-.form-container h5{
-    margin-left: 80%;
-    font-family: sans-serif;
-}
-.form-container .mb-3 {
-    margin-bottom: 15px;
-}
-
-.form-container .form-label {
-    display: block;
-    margin-bottom: 5px;
-    font-size: 1.2em; 
-    font-family:sans-serif;
-}
-
-.form-container .form-control {
-    width: 90%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 1em; 
-    font-family:sans-serif;
-}
-
-.contenido-principal {
-    background-color: #f2d694; 
-    flex: 1; 
-    display: flex;
-    flex-direction: column; 
-    align-items: center;
-    justify-content: center; 
-    padding: 12px; 
-    min-height: 70%;
 }
 
 .form-grid {
@@ -154,11 +92,13 @@ body {
     padding: 30px; 
     border: 1px solid #ccc; 
     border-radius: 5px; 
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    box-shadow: 13px 13px 23px rgba(0, 0, 0, 0.5);
+    border: 2px solid #262f57;
+    background: rgba(112, 247, 100, 0.356); 
+    backdrop-filter: blur(10px);
     display: grid; 
     grid-template-columns: repeat(3, 1fr); 
     gap: 30px; 
-    background-color: #fff2cc;
 }
 
 .form-group {
@@ -181,9 +121,32 @@ input {
     font-family: sans-serif;
 }
 
+.file-input {
+    padding: 0; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    background-color: #fff;
+    cursor: pointer;
+    font-size: 12px; 
+}
+
+.file-input::file-selector-button {
+    border: none;
+    background: #4431318e;
+    color: #fff2cc;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.file-input::file-selector-button:hover {
+    background: #00000094;
+}
+
 button {
     grid-column: span 3;
-    background-color:#b7392c;
+    background-color: #270d0a8e;
     color: #fff2cc;
     border: none; 
     padding: 10px 20px; 
@@ -192,42 +155,8 @@ button {
     font-size: 16px; 
 }
 
-button a {
-    text-decoration: none;
-    color: inherit;
-}
-
 button:hover {
-    background-color: #cd695e; 
-}
-
-.links-container {
-    display: flex;
-    justify-content: space-between; 
-    width: 100%; 
-    padding: 10px 0; 
-}
-
-.links-container h5 {
-    margin: 0; 
-    font-family: sans-serif; 
-}
-
-.links-container h5 a {
-    text-decoration: none; 
-    color: inherit; 
-}
-
-.form-group select {
-    width: calc(100% - 12px); 
-    padding: 10px; 
-    border: 1px solid #ccc; 
-    border-radius: 4px; 
-    box-sizing: border-box; 
-    font-size: 12px; 
-    font-family: sans-serif;
-    color: #333; 
-    background-color: white; 
+    background-color: #00000094; 
 }
 
 .info-icon {
@@ -257,7 +186,6 @@ button:hover {
 }
 
 .info-icon i {
-    color: #17a2b8;
+    color: #545dd8;
     font-size: 1em;
 }
-

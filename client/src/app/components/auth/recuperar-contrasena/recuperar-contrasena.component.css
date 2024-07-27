@@ -1,75 +1,77 @@
-body {
-    margin: 0;
-    font-family: 'Comic Sans MS', cursive, sans-serif;
-    background-color: #f1f1f1;
-    background-image: url('/assets/FondoWebP.gif');
+.container h1 {
+    font-family: sans-serif;
 }
 
-.container h1,
-.left,
+.left {
+    font-family: sans-serif;
+    margin-left: 0%;
+}
+
 .right {
-    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-family: sans-serif;
+}
+
+body {
+    margin: 0;
+    font-family: sans-serif;
 }
 
 .container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    min-height: 100vh; /* Ajuste para asegurar que ocupe toda la altura visible */
+justify-content: center;
+    height: 100vh;
 }
 
 .header {
-    background-color: #CB4154;
+    background-color: #4a4657;
     color: white;
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /* Alinea a la izquierda */
-    width: 100%;
-    padding: 1px 0;
+    align-items: center;
 }
 
 .title {
-    background-color: #E2725B;
+    background-color: #3c374e;
     width: 100%;
     text-align: center;
     padding: 10px 0;
 }
 
 .header nav {
-    background-color: #CB4154;
+    background-color: #4a4657;
     width: 100%;
 }
 
 .header nav ul {
     list-style: none;
     display: flex;
-    justify-content: flex-end; /* Alinea a la derecha */
+    justify-content: space-between;
     margin: 0;
     padding: 10px 20px;
 }
 
-.header nav ul li {
-    margin-left: 310px; /* Espacio entre los elementos */
+.header nav ul li.left {
+    margin-right: auto;
 }
 
-.header nav ul li:first-child {
-    margin-left: 0; /* Elimina el margen izquierdo del primer elemento */
-}
-
-.header nav ul li:last-child {
-    margin-left: auto; /* Mueve el último elemento al inicio */
+.header nav ul li.right {
+    margin-left: 20px;
 }
 
 .header nav ul li a {
     color: white;
     text-decoration: none;
-    font-weight: 600;
+    font-weight:600;
 }
 
 .main-content {
     background-color: #f1edec;
-   
+    background-image: url("/assets/FondoPagina.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -82,30 +84,17 @@ body {
     margin-top: 0;
 }
 
-.image-container {
-    width: 80%;
-    height: 300px;
-    border: 2px solid black;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: white;
-}
-
-.image-container p {
-    margin: 0;
-}
-
 .form-container {
     width: 80%;
     max-width: 500px;
-    margin-top: 50px;
-    background-color: #fff2cc;
+    background: transparent;
+    backdrop-filter: blur(10px);
     padding: 20px;
-    border: 1px solid #ccc;
+    border: 2px solid #262f57;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: center; /* Centra el contenido del formulario */
+    text-align: center; 
+    align-items: center;
 }
 
 .form-container h2 {
@@ -125,7 +114,7 @@ body {
 }
 
 .form-container .form-control {
-    width: 100%;
+    width: 90%;
     padding: 10px;
     margin-bottom: 10px;
     border: 1px solid #ccc;
@@ -141,6 +130,7 @@ body {
     border: none;
     outline: none;
     font-weight: bold;
+    font-family: sans-serif;
 }
 
 .btn-primary {
@@ -151,7 +141,7 @@ body {
 .btn-secondary {
     background-color: #E2725B;
     color: white;
-    margin-left: 20px; /* Espacio adicional */
+    margin-left: 20px; 
 }
 
 .btn-cancel {
@@ -162,7 +152,7 @@ body {
 .btn-confirm {
     background-color: #CB4154;
     color: white;
-    margin-left: 20px; /* Espacio adicional */
+    margin-left: 20px; 
 }
 
 .error-message {
@@ -192,7 +182,7 @@ body {
 .form-container .btn-group {
     margin-top: 20px;
     display: flex;
-    justify-content: center; /* Ajusta el espacio entre botones */
+    justify-content: center; 
     align-items: center;
 }
 

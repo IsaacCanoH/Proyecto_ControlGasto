@@ -23,7 +23,7 @@ body {
 }
 
 .header {
-    background-color: #CB4154;
+    background-color: #4a4657;
     color: white;
     display: flex;
     flex-direction: column;
@@ -37,14 +37,14 @@ body {
 }
 
 .title {
-    background-color: #E2725B;
+    background-color: #3c374e;
     width: 100%;
     text-align: center;
     padding: 10px 0;
 }
 
 .header nav {
-    background-color: #CB4154;
+    background-color: #4a4657;
     width: 100%;
 }
 
@@ -73,7 +73,10 @@ body {
 
 .main-content {
     background-color: #f1edec;
-    background-image: url('/assets/FondoWebP.gif');
+    background-image: url('/assets/FondoA.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -83,16 +86,22 @@ body {
 }
 
 .main-content .white-container {
-    background-color: #fff2cc;
     padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px; 
+    box-shadow: 13px 13px 23px rgba(0, 0, 0, 0.5);
+    border: 2px solid #262f57;
+    background: rgba(100, 247, 247, 0.356); 
     width: 90%;
     margin: 0 auto;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap; 
     justify-content: space-between; 
+}
+
+.main-content h1{
+    color: #fff;
+    font-family: sans-serif;
 }
 
 .main-content h2 {

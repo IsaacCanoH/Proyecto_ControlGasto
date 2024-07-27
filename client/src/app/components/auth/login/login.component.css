@@ -23,7 +23,7 @@ body {
 }
 
 .header {
-    background-color: #CB4154;
+    background-color: #4a4657;
     color: white;
     display: flex;
     flex-direction: column;
@@ -31,14 +31,14 @@ body {
 }
 
 .title {
-    background-color: #E2725B;
+    background-color: #3c374e;
     width: 100%;
     text-align: center;
     padding: 10px 0;
 }
 
 .header nav {
-    background-color: #CB4154;
+    background-color: #4a4657;
     width: 100%;
 }
 
@@ -66,7 +66,10 @@ body {
 
 .main-content {
     background-color: #f1edec;
-    background-image: url('/assets/FondoWebP.gif');
+    background-image: url('/assets/FondoPagina.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -78,21 +81,6 @@ body {
 .main-content h2 {
     margin-top: 0;
 }
-
-.image-container {
-    width: 80%;
-    height: 300px;
-    border: 2px solid black;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: white;
-}
-
-.image-container p {
-    margin: 0;
-}
-
 .form-container {
     width: 30%; 
     max-width: 450px; 
@@ -100,8 +88,11 @@ body {
     margin-top: 50px; 
     background-color: #fff2cc;
     padding: 20px;
-    border: 1px solid #ccc;
+    border: 2px solid #1f1a35;
     border-radius: 5px;
+    background: transparent;
+    backdrop-filter: blur(10px);
+    box-shadow: 13px 13px 23px rgba(0, 0, 0, 0.5);
 }
 
 .form-container h1 {
@@ -137,8 +128,8 @@ body {
 }
 
 .custom-btn {
-    width: 90%; 
-    background-color: #b7392c;
+    width: 100%; 
+    background-color: #424144;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -152,7 +143,7 @@ body {
 }
 
 .custom-btn:hover {
-    background-color: #cd695e;
+    background-color: #79787c;
 }
 .contenido-principal {
     background-color: #f2d694; 
@@ -208,7 +199,8 @@ input {
 
 .links-container h5 {
     margin: 0;
-    font-family: sans-serif; 
+    font-family: sans-serif;
+    color: #fff;
 }
 
 .links-container h5 a {
