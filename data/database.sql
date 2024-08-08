@@ -16,42 +16,42 @@ CREATE TABLE Usuario (
 
 CREATE TABLE Servicio (
     IdServicio INT PRIMARY KEY AUTO_INCREMENT,
-    IdUsuario INT,
-    Producto VARCHAR(100),
-    Cantidad INT,
-    Cliente VARCHAR(50),
-    Estado VARCHAR(20),
-    Monto DECIMAL(10, 2),
-    FechaServicio DATETIME,
+    IdUsuario INT NOT NULL,
+    Producto VARCHAR(100) NOT NULL,
+    Cantidad INT NOT NULL,
+    Cliente VARCHAR(50) NOT NULL,
+    Estado VARCHAR(20) NOT NULL,
+    Monto DECIMAL(10, 2) NOT NULL,
+    FechaServicio DATETIME NOT NULL,
     FOREIGN KEY (IdUsuario) REFERENCES Usuario(IdUsuario)
 );
 
 CREATE TABLE Ingreso (
     IdIngreso INT PRIMARY KEY AUTO_INCREMENT,
-    IdUsuario INT,
-    TipoIngreso VARCHAR(50),
-    OrigenIngreso VARCHAR(100),
-    Categoria VARCHAR(30),
-    Monto DECIMAL(10, 2),
-    FechaIngreso DATETIME,
+    IdUsuario INT NOT NULL,
+    TipoIngreso VARCHAR(50) NOT NULL,
+    OrigenIngreso VARCHAR(100) NOT NULL,
+    Categoria VARCHAR(30) NOT NULL,
+    Monto DECIMAL(10, 2) NOT NULL,
+    FechaIngreso DATETIME NOT NULL,
     FOREIGN KEY (IdUsuario) REFERENCES Usuario(IdUsuario)
 );
 
 CREATE TABLE Gasto (
     IdGasto INT PRIMARY KEY AUTO_INCREMENT,
-    IdUsuario INT,
-    Descripcion VARCHAR(100),
-    Categoria VARCHAR(30),
-    Monto DECIMAL(10, 2),
-    FechaTransaccion DATETIME,
-    MetodoPago VARCHAR(50),
+    IdUsuario INT NOT NULL,
+    Descripcion VARCHAR(100) NOT NULL,
+    Categoria VARCHAR(30) NOT NULL,
+    Monto DECIMAL(10, 2) NOT NULL,
+    FechaTransaccion DATETIME NOT NULL,
+    MetodoPago VARCHAR(50) NOT NULL,
     Comprobante VARCHAR(100),
     FOREIGN KEY (IdUsuario) REFERENCES Usuario(IdUsuario)
 );
 
 CREATE TABLE Presupuesto (
     PresupuestoTotal INT PRIMARY KEY,
-    PresupuestoActual INT,
-    IdUsuario INT, -- Agregar esta columna
+    PresupuestoActual INT NOT NULL,
+    IdUsuario INT NOT NULL, -- Agregar esta columna
     FOREIGN KEY (IdUsuario) REFERENCES Usuario(IdUsuario)
 );
